@@ -1,6 +1,6 @@
 # Wordle Solver
 
-Wordle Solver is a python based application to help solve [Wordle puzzles](https://www.powerlanguage.co.uk/wordle/). Using a pre-defined dictionary, it calculates w score for each word based on the prevalence of letters in that word, suggests the highest scored word (currently `arose`), and prompts the user for results of playing that word. Then it refines the suggestion based on inputs.
+Wordle Solver is a python based application to help solve [Wordle puzzles](https://www.powerlanguage.co.uk/wordle/). Using a pre-defined dictionary, it calculates a score for each word based on the prevalence of letters in that word, suggests the highest scored word (currently `arose`), and prompts the user for results of playing that word. Then it refines the suggestion based on inputs.
 
 ## Dictionary.txt
 Words in the dictionary.txt file taken from https://wordfind.com/length/5-letter-words/. Thank you, to who ever put that together.
@@ -12,7 +12,7 @@ Words in the dictionary.txt file taken from https://wordfind.com/length/5-letter
 4. Repeat process until you have the solve, then kill the application with `ctrl+C`
 
 ### example
-> Booting up. Just a sec while I load all the things.dleSolver.py
+> Booting up. Just a sec while I load all the things.
 > 
 > Ready to go. Start with arose
 > 
@@ -39,3 +39,8 @@ Words in the dictionary.txt file taken from https://wordfind.com/length/5-letter
 1. Boot up time takes a while. Cache the dictionary and weighted word list to save time.
 2. Make the application stateful so you don't have to reenter all the excluded letters again every time.
 3. Handle yellow letters from Wordle; those that are present but in the wrong position.
+
+### Caveat Emptor
+Application is provided without warranty or guarantee of suitability. 
+There's basically no error handling, so the garbage you put in will be the garbage it spits out. 
+Author takes no responsibility for outcomes of its use, up to and including death, dismemberment, sad-panda feelings, self-loathing, scorn of friends and neighbors, or peril of the user's eternal soul.
